@@ -144,17 +144,17 @@ elif page == "Importance of Randomness":
     st.markdown(r"""
     To understand why modeling randomness is crucial, especially for derivatives pricing, we need to look at Jensen's inequality.
     
-    Consider a simple example: A stock is currently priced at $100. After one year, it could either be worth $50 or $150, with equal probability.
+    Consider a simple example: A stock is currently priced at $100$. After one year, it could either be worth $50$ or $150$, with equal probability.
     
-    There are two ways we might try to value a call option with a strike price of $100:
+    There are two ways we might try to value a call option with a strike price of $100$:
     
     **Approach 1**: Take the expected future stock price and calculate the option payoff.
-    - Expected future stock price = $100 (average of $50 and $150)
+    - Expected future stock price = $100$ (average of $50$ and $150$)
     - Call option payoff = $\max(S - K, 0) = \max(100 - 100, 0) = 0$
     
     **Approach 2**: Calculate the option payoff for each scenario and take the average.
-    - If stock goes to $50: Payoff = $\max(50 - 100, 0) = 0$
-    - If stock goes to $150: Payoff = $\max(150 - 100, 0) = 50$
+    - If stock goes to $50$: Payoff = $\max(50 - 100, 0) = 0$
+    - If stock goes to $150$: Payoff = $\max(150 - 100, 0) = 50$
     - Expected payoff = $(0 + 50)/2 = 25$
     
     The second approach gives a much higher value! This is Jensen's inequality in action:
@@ -793,7 +793,7 @@ elif page == "About & Disclaimers":
 # Add footer
 st.markdown("""
 <div class="footer">
-    <p>© 2023 Luís Simões da Cunha. This work is licensed under CC BY-NC 4.0.</p>
+    <p>© 2025 Luís Simões da Cunha. This work is licensed under CC BY-NC 4.0.</p>
     <p>Created for educational purposes only. Not financial advice.</p>
 </div>
 """, unsafe_allow_html=True)
